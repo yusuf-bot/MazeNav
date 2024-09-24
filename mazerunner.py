@@ -1,5 +1,5 @@
 from colorama import Fore
-
+import sys
 
 def create_maze(filename):
     """
@@ -188,7 +188,7 @@ class Agent:
 
 
 # Example usage:
-filename = 'ENTER MAZE FILE HERE'
+filename = sys.argv[1]
 maze, target, x_max, y_max, start_x, start_y = create_maze(filename)
 
 agent = Agent()
